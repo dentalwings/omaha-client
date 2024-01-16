@@ -22,6 +22,7 @@
 #include <wincrypt.h>
 #include <intsafe.h>
 #include <memory.h>
+#include <limits.h>
 #pragma warning(disable : 4245)
 // C4245 : conversion from 'type1' to 'type2', signed/unsigned mismatch
 #include <atlenc.h>
@@ -47,7 +48,7 @@ const DWORD kCertificateNameType = CERT_NAME_SIMPLE_DISPLAY_TYPE;
 const DWORD kKeyPairType = AT_SIGNATURE;
 
 // Maximum file size allowed for performing authentication.
-const size_t kMaxFileSizeForAuthentication = 512 * 1024 * 1024;  // 512MB
+const size_t kMaxFileSizeForAuthentication = INT_MAX;  // 2048MB
 
 // Buffer size used to read files from disk.
 const size_t kFileReadBufferSize = 128 * 1024;
