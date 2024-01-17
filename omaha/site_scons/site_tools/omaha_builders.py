@@ -97,7 +97,7 @@ def SignDotNetManifest(env, target, unsigned_manifest):
     # to an instance of an object."
     sign_manifest_cmd += ('-CertHash ' + env['CERTIFICATE_HASH'])
   else:
-    sign_manifest_cmd += '-CertFile %s -Password %s' % (
+    sign_manifest_cmd += '-CertFile %s -Password "%s"' % (
         env.GetOption('authenticode_file'),
         env.GetOption('authenticode_password'))
 
