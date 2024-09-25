@@ -65,12 +65,12 @@ _is_google_update_build = False
 # These values must be changed when customizing open source Omaha.
 # You may also wish to replace the language-neutral constants in the individual
 # *generated_resources_*.rc files with localized strings.
-_FULL_COMPANY_NAME = 'Dental Wings Inc.'
-_SHORT_COMPANY_NAME = 'DW'
-_PRODUCT_NAME = 'DentalWingsUpdate'
+_FULL_COMPANY_NAME = 'Straumann Group Inc.'
+_SHORT_COMPANY_NAME = 'STMN'
+_PRODUCT_NAME = 'StraumannUpdate'
 _COMPANY_DOMAIN_BASE = 'dwos'
 _COMPANY_DOMAIN = _COMPANY_DOMAIN_BASE + '.com'
-_MAIN_EXE_BASE_NAME = 'DentalWingsUpdate'
+_MAIN_EXE_BASE_NAME = 'Update'
 
 # Optionals defines.
 # The following values can be used to override Omaha's default URLs used
